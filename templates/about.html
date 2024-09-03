@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block base %}
+	
+			<section
+				class="page_breadcrumbs cs gradient background_cover color_overlay section_padding_top_65 section_padding_bottom_65">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+
+							<h2>
+								About </h2>
+							<ol class="breadcrumb big-spacing darklinks">
+								<li class="first-item">
+									<a href="{% url 'home' %}">Homepage</a>
+								</li>
+								<li class="last-item">About</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="fw-page-builder-content">
+				<section
+					class="fw-main-row  ls section_padding_top_150 section_padding_bottom_150 columns_padding_15 background_cover"
+					style="background-image:url(/static/about.jpg);"
+					id="about">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-sm-12 col-md-6 col-lg-5 col-md-offset-6 col-lg-offset-7">
+								<p class="text-left small-text aboveheading">
+									<span class="highlight bold text-uppercase">
+										What is Market </span>
+								</p>
+								<h2 class="text-left section_header ">
+									<span class="  ">
+										A Right perception with correct approach </span>
+								</h2>
+								<p>"MARKET IS ALWAYS RIGHT", We need to develope the preception which suits the market. It is our angle that decides and defines the success and its probability towords the market.</p>
+								<div class="fw-divider-space " style="padding-top: 20px;"></div>
+								<a href="{% url 'pricing' %}" target="_self"
+									class="theme_button color1 min_width_button">
+									<span>Join us</span>
+								</a>
+							</div>
+
+
+						</div>
+					</div>
+				</section>
+				<section
+					class="fw-main-row  ls ms section_padding_top_150 section_padding_bottom_150 columns_padding_15 columns_margin_bottom_30 background_cover"
+					style="background-image:url(/static/advantages.jpg);"
+					id="advantages">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-4 col-sm-6">
+								<div class="teaser text-center ">
+									<div class="teaser_icon size_small highlight">
+										<i class="rt-icon2-lock2"></i>
+									</div>
+									<h4 class=" ">
+										<a href="#0">
+
+											Safe &amp; Secure
+										</a>
+									</h4>
+									<p>
+										Be sure in your account security and your funds safe. </p>
+								</div>
+							</div>
+
+
+
+							<div class="col-md-4 col-sm-6 col-md-offset-4">
+								<div class="teaser text-center ">
+									<div class="teaser_icon size_small highlight">
+										<i class="rt-icon2-bubble"></i>
+									</div>
+									<h4 class=" ">
+										<a href="#0">
+
+											Experts Support
+										</a>
+									</h4>
+									<p>
+										Support will answer your questions regarding markets. </p>
+								</div>
+							</div>
+
+
+
+							<div class="col-md-3 col-sm-6">
+								<div class="teaser text-center ">
+									<div class="teaser_icon size_small highlight2">
+										<i class="rt-icon2-phone5"></i>
+									</div>
+									<h4 class=" ">
+										<a href="#0">
+
+											community
+										</a>
+									</h4>
+									<p>
+										To enhance your educational horizon here you will get an oppertunity to communicate with members. </p>
+								</div>
+							</div>
+
+
+
+							<div class="col-md-3 col-sm-6 col-md-offset-6">
+								<div class="teaser text-center ">
+									<div class="teaser_icon size_small highlight2">
+										<i class="rt-icon2-stack4"></i>
+									</div>
+									<h4 class=" ">
+										<a href="#0">
+
+											Wealth creation
+										</a>
+									</h4>
+									<p>
+										It is the art of investing in diversified asset classes to create passive of stable source of income. </p>
+								</div>
+							</div>
+
+
+
+							<div class="col-md-4 col-sm-6">
+								<div class="teaser text-center ">
+									<div class="teaser_icon size_small highlight3">
+										<i class="rt-icon2-wallet2"></i>
+									</div>
+									<h4 class=" ">
+										<a href="#0">
+
+											Philosophy
+										</a>
+									</h4>
+									<p>
+										We our undertake seek to understand fundamental truths about themselves. </p>
+								</div>
+							</div>
+
+
+
+							<div class="col-md-4 col-sm-6 col-md-offset-4">
+								<div class="teaser text-center ">
+									<div class="teaser_icon size_small highlight3">
+										<i class="rt-icon2-bulb"></i>
+									</div>
+									<h4 class=" ">
+										<a href="#0">
+
+											Market Knowledge
+										</a>
+									</h4>
+									<p>
+										You will get a better chance to improve your market knowledge with experts. </p>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</section>
+			</div>
+			{% endblock base %}

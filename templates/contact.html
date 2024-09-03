@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block base %}
+	
+	
+			<section
+				class="page_breadcrumbs cs gradient background_cover color_overlay section_padding_top_65 section_padding_bottom_65">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+
+							<h2>
+								Contacts </h2>
+							<ol class="breadcrumb big-spacing darklinks">
+								<li class="first-item">
+									<a href="{% url 'home' %}">Homepage</a>
+								</li>
+								<li class="last-item">Contacts</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="fw-page-builder-content">
+				<!-- <div class="fw-map"
+					data-locations="[{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;thumb&quot;:false,&quot;coordinates&quot;:{&quot;lat&quot;:51.5116991,&quot;lng&quot;:-0.13602309999999},&quot;description&quot;:&quot;&quot;}]"
+					data-map-type="ROADMAP" data-map-height="500"
+					data-gmap-key="AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo" data-disable-scrolling="">
+					<div class="fw-map-canvas"></div>
+				</div> -->
+				<section class="fw-main-row  ls section_padding_top_75 section_padding_bottom_150 columns_padding_25">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-xs-12 col-md-8">
+								<h3 class="text-left section_header ">
+									<span class="  ">
+										Contact Form </span>
+								</h3>
+								<div class="form-wrapper  columns_padding_10 ">
+									<form data-fw-form-id="fw_form" method="POST" data-fw-ext-forms-type="contact-forms"><input
+											type="hidden" name="fwf" value="fw_form" />
+										{% csrf_token %}
+										<div class="wrap-forms">
+											<div class="row"></div>
+											<div class="row">
+												<div class="col-xs-12 col-sm-6 form-builder-item">
+													<div class="form-group has-placeholder">
+														<label for="id-1">Full Name <sup>*</sup> </label>
+														<input class="form-control" type="text" name="text_4dfff00"
+															placeholder="Full Name" value="" id="id-1"
+															required="required">
+													</div>
+												</div>
+												<div class="col-xs-12 col-sm-6 form-builder-item">
+													<div class="form-group has-placeholder">
+														<label for="id-2">Email Address <sup>*</sup> </label>
+														<input class="form-control" type="email" name="email_da5db5d"
+															placeholder="Email Address" value="" id="id-2"
+															required="required">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12 col-sm-6 form-builder-item">
+													<div class="form-group has-placeholder">
+														<label for="id-3">Phone Number </label>
+														<input class="form-control" type="number" name="text_a349eee"
+															placeholder="Phone Number" value="" id="id-3">
+													</div>
+												</div>
+												<div class="col-xs-12 col-sm-6 form-builder-item">
+													<div class="form-group has-placeholder">
+														<label for="id-4">Subject </label>
+														<input class="form-control" type="text" name="text_16f3bed"
+															placeholder="Subject" value="" id="id-4">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12 form-builder-item">
+													<div class="form-group has-placeholder">
+														<label for="id-5">Your Message <sup>*</sup> </label>
+														<textarea class="form-control" name="textarea_f2c20e0"
+															placeholder="Your Message" id="id-5"
+															required="required"></textarea>
+													</div>
+												</div>
+											</div>
+											<div class="row"></div>
+										</div>
+										<div class="wrap-forms topmargin_20">
+											<div class="row">
+												<div class="col-sm-12">
+													<input class="theme_button min_width_button color1" type="submit"
+														value="Submit" />
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+
+
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<h3 class="text-left section_header ">
+									<span class="  ">
+										Contact Info </span>
+								</h3>
+								<aside class="shortcode-widget-area">
+									<div class="widget-theme-wrapper widget_no_background ">
+										<div id="coinster_contacts-2" class="widget widget_contacts">
+											<h3 class="widget-title"></h3>
+											<div class="media small-text margin_0">
+												<div class="media-body colorlinks">
+													208 - Shoppers Plaza-6, Chimanlal Girdharlal Rd, above Union Bank, opp. Municipal Market, Navrangpura, Ahmedabad, Gujarat 380009
+                                       				2099 Limer St, Ellijay, GA 30540 </div>
+											</div>
+											<div class="media small-text margin_0">
+												<div class="media-body colorlinks">
+													+91 9512030301 </div>
+											</div>
+											<div class="media small-text margin_0">
+												<div class="media-body colorlinks">
+													<a href="mailto:coinster@example.com">
+														pparaminvestments@gmail.com </a>
+												</div>
+											</div>
+											<div class="media small-text margin_0">
+												<div class="media-body colorlinks">
+													Mon-Fri: 9:00-19:00 </div>
+											</div>
+										</div>
+									</div>
+								</aside>
+							</div>
+
+
+						</div>
+					</div>
+				</section>
+			</div>
+
+{% endblock base %}
+		
+			
